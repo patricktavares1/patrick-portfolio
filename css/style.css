@@ -1,0 +1,912 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #d5daff;
+    user-select: none;
+}
+
+body::-webkit-scrollbar {
+    width: 0vw;
+}
+
+.backgroundbord {
+    width: 100vw;
+    height: 88.17vw;
+    background: #1C2BAE;
+    border-radius: 0vw 0vw 4.94vw 4.94vw;
+}
+
+.backgroundponts {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    top: 0%;
+    position: fixed;
+}
+
+.header-logo {
+    position: absolute;
+    width: 3.17vw;
+    height: 1.66vw;
+    left: 1.40vw;
+    top: 1.04vw;
+    filter: opacity(50%);
+    transition: all ease 0.5s;
+}
+
+.header-logo:hover {
+    filter: opacity(100%);
+}
+
+.nav-border {
+    display: flex;
+    flex: 1;
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Montserrat';
+    top: 0.78vw;
+    left: 65.10vw;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.90vw;
+}
+
+.nav-border>nav>ul>li>a {
+    margin-left: 3vw;
+}
+
+li {
+    list-style-type: none;
+}
+
+.home,
+.about,
+.skills,
+.contact,
+.job {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.589);
+    transition: all ease 0.7s;
+}
+
+.home:hover,
+.about:hover,
+.skills:hover,
+.job:hover,
+.contact:hover {
+    color: rgb(255, 255, 255);
+}
+
+.container-borda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-radius {
+    position: absolute;
+    top: 13.02vw;
+    left: 15.31vw;
+    width: 0.26vw;
+    height: 4.42vw;
+    background: #7687FF;
+    border-radius: 0.78vw;
+    transform: rotate(-180deg);
+    transition: all ease 0.7s;
+    cursor: pointer;
+}
+
+.container-radius:hover {
+    background: #e3e6ff;
+}
+
+.container-text {
+    position: absolute;
+    width: 34.79vw;
+    height: 4.06vw;
+    left: 16.25vw;
+    top: 13.02vw;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.33vw;
+    line-height: 4.06vw;
+    color: #FFFFFF;
+    transition: all ease 0.7s;
+    cursor: pointer;
+}
+
+.container-text:hover {
+    color: #b3b3b3;
+}
+
+.container-info {
+    position: absolute;
+    width: 48.48vw;
+    height: 12.18vw;
+    left: 13.02vw;
+    top: 26.45vw;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.60vw;
+    line-height: 3.12vw;
+    color: #FFFFFF;
+    transition: all ease 0.7s;
+    cursor: pointer;
+}
+
+.container-info:hover {
+    color: #b3b3b3;
+}
+
+.container-home {
+    position: absolute;
+    width: 38.43vw;
+    height: 12.70vw;
+    left: 53.59vw;
+    top: 17.34vw;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10.41vw;
+    line-height: 12.70vw;
+    color: rgba(255, 255, 255, 0.12);
+}
+
+.about-home {
+    position: absolute;
+    width: 38.43vw;
+    height: 12.70vw;
+    left: 5.20vw;
+    top: 70.31vw;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10.41vw;
+    line-height: 12.70vw;
+    color: rgba(255, 255, 255, 0.12);
+}
+
+.about-my {
+    position: absolute;
+    left: 8.70vw;
+    top: 52.86vw;
+    width: 7.81vw;
+    height: 7.81vw;
+    box-shadow: #e3e6ff 0.05vw;
+    border-radius: 5.20vw;
+    -webkit-box-shadow: 0.20vw 0.05vw 0.62vw -0.10vw #7687FF;
+    box-shadow: 0.26vw 0.05vw 0.62vw -0.10vw #7687FF;
+    transition: all ease 0.7s;
+}
+
+.about-my:hover {
+    cursor: pointer;
+    filter: opacity(80%);
+}
+
+.about-text {
+    position: absolute;
+    left: 18.22vw;
+    top: 54.68vw;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.33vw;
+    line-height: 4.06vw;
+    color: #FFFFFF;
+    transition: all ease 0.7s;
+    cursor: pointer;
+}
+
+.about-text:hover {
+    color: #b3b3b3;
+}
+
+.about-info {
+    position: absolute;
+    left: 18.22vw;
+    top: 65.10vw;
+    width: 36.45vw;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.72vw;
+    color: #FFFFFF;
+    transition: all ease 0.7s;
+    cursor: pointer;
+}
+
+.about-info:hover {
+    color: #b3b3b3;
+}
+
+.insta {
+    position: absolute;
+    left: 18.17vw;
+    top: 69vw;
+    width: 1.25vw;
+    height: 1.25vw;
+    transition: all ease 0.5s;
+    border-radius: 0.52vw;
+}
+
+.insta:hover {
+    filter: opacity(50%);
+}
+
+.github {
+    position: absolute;
+    left: 19.79vw;
+    top: 69vw;
+    width: 1.25vw;
+    height: 1.25vw;
+    transition: all ease 0.5s;
+    border-radius: 0.52vw;
+}
+
+.github:hover {
+    filter: opacity(50%);
+}
+
+.skillls {
+    display: flex;
+    justify-content: center;
+}
+
+.skillls {
+    width: 100%;
+    height: 57.29vw;
+    background-color: #d5daff;
+}
+
+.skillls-text {
+    position: absolute;
+    top: 93.75vw;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.33vw;
+    color: #1C2BAE;
+    transition: all ease 0.7s;
+    cursor: pointer;
+}
+
+.skillls-text:hover {
+    color: #000950;
+}
+
+.skills-skill {
+    position: absolute;
+    width: 38.43vw;
+    height: 12.70vw;
+    left: 53.59vw;
+    top: 130.20vw;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10.41vw;
+    line-height: 12.70vw;
+    color: rgba(0, 26, 255, 0.068);
+}
+
+.paiskills {
+    display: flex;
+    align-items: center;
+}
+
+#wrapper {
+    display: flex;
+    align-items: center;
+    /*height: 80vh;
+    min-height:20em; */
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.innerdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline: none;
+}
+
+.svg {
+    width: 100%;
+}
+
+.cirlesj {
+    fill: none;
+    stroke-width: 3;
+    stroke: #242d3a;
+}
+
+.path {
+    fill: transparent;
+    stroke-width: 3;
+    stroke-linecap: round;
+}
+
+#aPath {
+    stroke: #1C2BAE;
+}
+
+#bPath {
+    stroke: #1C2BAE;
+}
+
+#gPath {
+    stroke: #1C2BAE;
+}
+
+.text-skills {
+    text-anchor: middle;
+    font-family: 'Montserrat';
+    font-size: 1.82vw;
+    fill: rgb(0, 0, 0);
+}
+
+text {
+    dominant-baseline: central;
+    text-anchor: middle;
+    font-family: 'Montserrat';
+    font-size: 0.26vw;
+    fill: rgb(0, 0, 0);
+}
+
+@media only screen and (min-width:25vw) {
+    #wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        min-height: 20em;
+    }
+
+    p {
+        font-size: 3vw;
+    }
+}
+
+.trabalhos {
+    width: 100%;
+    height: 88.17vw;
+    background: #1C2BAE;
+    border-radius: 4.94vw 4.94vw 0vw 0vw;
+}
+
+.backgroundfundo {
+    width: 100%;
+    height: 100%;
+}
+
+.job-text {
+    position: absolute;
+    width: 38.43vw;
+    height: 12.70vw;
+    left: 1.14vw;
+    top: 192.70vw;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10.41vw;
+    line-height: 12.70vw;
+    color: rgba(255, 255, 255, 0.12);
+}
+
+.contando {
+    display: flex;
+}
+
+.contando-text {
+    position: absolute;
+    width: 17.23vw;
+    left: 13.02vw;
+    top: 203.54vw;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.04vw;
+    line-height: 1.56vw;
+    color: #FFFFFF;
+    transition: all ease 0.7s;
+    cursor: pointer;
+}
+
+.contando-text:hover {
+    color: #b3b3b3;
+}
+
+.cont-text {
+    position: absolute;
+    width: 22.44vw;
+    left: 59.89vw;
+    top: 213.95vw;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.04vw;
+    line-height: 1.56vw;
+    color: #FFFFFF;
+    transition: all ease 0.7s;
+    cursor: pointer;
+}
+
+.cont-text:hover {
+    color: #b3b3b3;
+}
+
+.by-pk {
+    position: absolute;
+    width: 22.44vw;
+    left: 13.02vw;
+    top: 224.37vw;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.04vw;
+    line-height: 1.56vw;
+    color: #FFFFFF;
+    transition: all ease 0.7s;
+    cursor: pointer;
+}
+
+.by-pk:hover {
+    color: #000950;
+    font-size: 2.08vw;
+}
+
+.card-teste {
+    display: flex;
+    justify-content: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 166.66vw;
+    width: 100%;
+    max-width: 42.70vw;
+}
+
+.card--1 .card__img,
+.card--1 .card__img--hover {
+    background-image: url('https://cdn.discordapp.com/attachments/717574650678345759/982097873682440272/unknown.png');
+}
+
+.card--2 .card__img,
+.card--2 .card__img--hover {
+    background-image: url('https://cdn.discordapp.com/attachments/717574650678345759/982098129086214144/unknown.png');
+}
+
+.card__clock-info {
+    float: right;
+}
+
+.card__img {
+    visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 12.23vw;
+    border-top-left-radius: 0.62vw;
+    border-top-right-radius: 0.62vw;
+
+}
+
+.card__info-hover {
+    position: absolute;
+    padding: 0.62vw;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+}
+
+.card__img--hover {
+    transition: 0.2s all ease-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+    height: 12.23vw;
+    border-top-left-radius: 0.62vw;
+    border-top-right-radius: 0.62vw;
+    top: 0;
+
+}
+
+.card {
+    margin-right: 1.30vw;
+    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+    background-color: #fff;
+    width: 33.3%;
+    position: relative;
+    border-radius: 0.62vw;
+    overflow: hidden;
+    box-shadow: 0vw 0.67vw 0.52vw -0.36vw rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    box-shadow: 0vw 1.56vw 0.93vw -0, 41vw rgba(0, 0, 0, 0.1);
+    transform: scale(1.10, 1.10);
+}
+
+.card__info {
+    z-index: 2;
+    background-color: #fff;
+    border-bottom-left-radius: 0.62vw;
+    border-bottom-right-radius: 0.62vw;
+    padding: 0.83vw 1.25vw 1.25vw 1.25vw;
+}
+
+.card__category {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-size: 0.67vw;
+    letter-spacing: 0.10vw;
+    font-weight: 500;
+    color: #0059ff;
+}
+
+.card__title {
+    font-size: 1.00vw;
+    margin-top: 0.26vw;
+    margin-bottom: 0.52vw;
+    font-family: 'Montserrat';
+}
+
+.card__by {
+    font-size: 0.62vw;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+.card:hover .card__img--hover {
+    height: 100%;
+    opacity: 0.3;
+}
+
+.card:hover .card__info {
+    background-color: transparent;
+    position: relative;
+}
+
+.card:hover .card__info-hover {
+    opacity: 1;
+}
+
+.contactss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C2BAE;
+    width: 100%;
+    height: 4.16vw;
+}
+
+.insta2,
+.linkdin,
+.github2 {
+    width: 2.08vw;
+    height: 2.08vw;
+    transition: all ease 0.7s;
+}
+
+.insta2:hover,
+.linkdin:hover,
+.github2:hover {
+    width: 2.60vw;
+    height: 2.60vw;
+    filter: opacity(50%);
+}
+
+.rodape {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    border-radius: 30px 30px 0px 0px;
+    left: 0%;
+    right: 0%;
+    top: 90.39%;
+    bottom: 0%;
+    background: #000855;
+}
+
+.rodape-pai {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -10px;
+    top: 50px;
+}
+
+.rodape-imghome,
+.rodape-imgabout,
+.rodape-imgskills,
+.rodape-imgjobs,
+.rodape-imgcontact {
+    margin-left: 90px;
+    margin-bottom: 10px;
+    width: 90px;
+    height: 90px;
+    transition: all ease 0.7s;
+}
+
+.rodape-imghome:hover,
+.rodape-imgabout:hover,
+.rodape-imgskills:hover,
+.rodape-imgjobs:hover,
+.rodape-imgcontact:hover,
+.rodape-texthome1:hover,
+.rodape-texthome2:hover,
+.rodape-texthome3:hover,
+.rodape-texthome4:hover,
+.rodape-texthome5:hover {
+    filter: opacity(50%);
+}
+
+.rodape-texthome1,
+.rodape-texthome2,
+.rodape-texthome3,
+.rodape-texthome4,
+.rodape-texthome5 {
+    position: absolute;
+    top: 100px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    transition: all ease 0.7s;
+    color: #FFFFFF;
+}
+
+.rodape-texthome1 {
+    position: absolute;
+    left: 94px;
+}
+
+.rodape-texthome2 {
+    position: absolute;
+    left: 270px;
+}
+
+.rodape-texthome3 {
+    position: absolute;
+    left: 452px;
+}
+
+.rodape-texthome4 {
+    position: absolute;
+    left: 640px;
+}
+
+.rodape-texthome5 {
+    position: absolute;
+    left: 785px;
+}
+
+.container-text,
+.container-info,
+.about-text,
+.about-my,
+.about-info,
+.skillls-text,
+.cards,
+.contando-text,
+.cont-text,
+#wrapper,
+.by-pk {
+    visibility: hidden;
+}
+
+@media (max-width: 1000px) {
+    .backgroundbord {
+        width: 100%;
+        height: 109.37vw;
+    }
+
+    .backgroundponts {
+        display: none;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .nav-border {
+        display: none;
+    }
+
+    .header-logo {
+        display: none;
+    }
+
+    .rodape {
+        display: block;
+    }
+
+    .container-text {
+        left: 70px;
+        font-size: 80px;
+        width: 830px;
+    }
+
+    .container-radius {
+        left: 63px;
+        top: 116px;
+        width: 0.26vw;
+        height: 6.42vw;
+    }
+
+    .container-info {
+        width: 800px;
+        line-height: 50px;
+        left: 70px;
+        top: 350px;
+        font-size: 50px;
+    }
+
+    .container-home {
+        top: 250px;
+    }
+
+    .about-my {
+        width: 200px;
+        height: 200px;
+        top: 815px;
+        border-radius: 100%;
+    }
+
+    .about-text {
+        top: 903px;
+        left: 330px;
+        font-size: 70px;
+    }
+
+    .about-info {
+        font-size: 25px;
+        width: 800px;
+        left: 100px;
+        top: 1090px;
+    }
+
+    .insta {
+        width: 50px;
+        height: 50px;
+        top: 1245px;
+        left: 90px;
+    }
+
+    .github {
+        width: 50px;
+        height: 50px;
+        top: 1245px;
+        left: 150px;
+    }
+
+    .about-home {
+        top: 1350px;
+    }
+
+    .backgroundbord {
+        width: 100%;
+        height: 1920px;
+    }
+
+    .skillls {
+        width: 100%;
+        height: 1310px;
+    }
+
+    .skillls-text {
+        top: 200.75vw;
+        font-size: 100px;
+    }
+
+    .skills-skill {
+        top: 309.2vw;
+        font-size: 100px;
+    }
+
+    #wrapper {
+        width: 900px;
+        height: 900px;
+    }
+
+    .backgroundfundo {
+        display: none;
+    }
+
+    .trabalhos {
+        width: 100%;
+        height: 2000px;
+    }
+
+    .contando-text {
+        top: 440vw;
+        font-size: 25px;
+        width: 300px;
+        line-height: 30px;
+    }
+
+    .cont-text {
+        top: 458vw;
+        width: 300px;
+        line-height: 30px;
+        font-size: 25px;
+    }
+
+    .by-pk {
+        top: 484.37vw;
+        width: 300px;
+        line-height: 30px;
+        font-size: 25px;
+    }
+
+    .by-pk:hover {
+        font-size: 40px;
+        width: 500px;
+    }
+
+    .text-skills {
+        font-size: 40px;
+    }
+
+    .job-text {
+        top: 392vw;
+    }
+
+    #aText,
+    #bText,
+    #gText {
+        font-size: 5px;
+    }
+
+    .cards {
+        top: 3600px;
+        max-width: 300px;
+    }
+
+    .card {
+        width: 350px;
+        height: 320px;
+    }
+
+    .card__title {
+        font-size: 30px;
+        width: 400px;
+    }
+
+    .card__by {
+        font-size: 25px;
+    }
+
+    .card__category {
+        font-size: 25px;
+    }
+
+    .contactss {
+        display: none;
+    }
+}
